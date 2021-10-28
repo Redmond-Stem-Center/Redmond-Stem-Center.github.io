@@ -12,6 +12,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+h3 {
+  scroll-behavior: smooth;
+  scroll-margin-bottom: 1000px;
+}
 body {
   font-family: "Open Sans", arial, sans-serif;
   color: #212529;
@@ -730,6 +734,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .section-title h3 {
@@ -824,11 +829,13 @@ section {
   border-color:#171D21 #F2F5EA  transparent transparent;
   transform: scale(1.0001);
 }
+
 .headerB {
   position: relative;
-  height: 100px;
+  height: 150px;
   background-color:#171D21;
 }
+
 .headerW {
   position: relative;
   height: 100px;
@@ -845,6 +852,10 @@ section {
   position: relative;
   height: 100px;
   background-color:#171D21;
+}
+
+.headerY {
+  height: 10px;
 }
 svg {
   position: absolute;
@@ -970,12 +981,69 @@ svg {
 	transition: all 0.4s ease 0s;
 }
 
+.socialbutton{
+  text-align: left;
+	color: #171D21 !important;
+  font-family: 'wavehaus';
+	background: #F2F5EA;
+	padding: 20px;
+	border: 4px solid black !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+  width: 600px;
+}
+.socialbutton:hover{
+	color: #ffffff !important;
+	background: #FF5964;
+	border-color: #FF5964 !important;
+	transition: all 0.4s ease 0s;
+}
+.applytojoin{
+	color:white !important;
+  font-family: 'wavehaus';
+	background: black;
+	padding: 20px;
+	border: 4px solid #ffffff !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+.applytojoin:hover {
+	color: black !important;
+	background: #FF5964;
+	border-color: #FF5964 !important;
+	transition: all 0.4s ease 0s;
+}
+.mentorButton{
+	color:white !important;
+  font-family: 'wavehaus';
+	background: black;
+	padding: 20px;
+	border: 4px solid #ffffff !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+.mentorButton:hover {
+	color: black !important;
+	background: #FF5964;
+	border-color: #FF5964 !important;
+	transition: all 0.4s ease 0s;
+}
+
+#mentor{
+  background: #F2F5EA;
+  border-bottom: black;
+  border-bottom-width: 10px;
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services{
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 0%;
 }
 .services .icon-box {
   padding: 30px;
