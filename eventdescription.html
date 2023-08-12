@@ -441,8 +441,11 @@
   width : device-width;
   height : device-height;
   padding-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .title {
@@ -463,25 +466,21 @@
 }
 
 .textarea {
-  width: 1007px;
   height: 500px;
   background: lightgray;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-top: 25px;
+  padding-top: 20px;
+  padding-left: 20px;
+  overflow-y: scroll;
   flex-grow: 1;
 }
 
 .desctext {
-  text-align: center;
-  font-size: 15px;
+  font-size: 22px;
 }
 
 @media (min-width: 768px) {
   .desctext {
-    text-align: center;
-    font-size: 20px;
+    font-size: 30px;
   }
 }
   /*--------------------------------------------------------------
@@ -709,85 +708,101 @@
       <h1 class="desctext"> 
         Day 1
         <br>
-        <u>9:00 - 9:15</u>: Settle in 
-        
-        <u>9:15 - 9:45</u>: Curriculum Overview and Forms
-        
-        <u>9:45 - 10:15</u>: IceBreakers and meeting everyone
-        
-        <u>10:15 - 10:30</u>: Snack Break
-        
-        <u>10:30 - 11:30</u>: Intro to Aerospace
-        
-        <u>11:30 - 12:00</u>: Physics PPT
-        
-        <u>12:00 - 12:45</u>: Lunch
-        
-        <u>12:45 - 1:15</u>: Physics PPT continued
-        
-        <u>1:15 - 3:00</u>: Bottle Rockets with Aerodynamics 
+        <u>8:30-9:15</u>: Parent Dropoff
         <br>
-        
+        <u>9:15-9:45</u>: Camp Orientation
+        <br>
+        <u>9:45-9:50</u>: Move to Al-K
+        <br>
+        <u>9:50-10:15</u>: Introductions & Ice-Breakers
+        <br>
+        <u>10:15-11:00</u>: Intro to Physics & Vectors
+        <br>
+        <u>11:00-11:30</u>: Snack Break
+        <br>
+        <u>11:30-12:15</u>: Intro to Aerospace
+        <br>
+        <u>12:15-1:00</u>: Lunch Break
+        <br>
+        <u>1:00-1:30</u>: History of Aerospace
+        <br>
+        <u>1:30-2:00</u>: Snack Break
+        <br>
+        <u>2:00-3:00</u>: History of Aerospace
+        <br>
+        <br>
         
         Day 2
+        <br>        
+        <u>9:15-9:45</u>: Recap of Day 1
         <br>
-        <u>9:00 - 9:15</u>: Settle in 
-        
-        <u>9:15 - 9:45</u>: Recap
-        
-        <u>9:45 - 10:45</u>: Parts used in rocketry
-        
-        <u>10:45 - 11:00</u>: Snack Break
-        
-        <u>11:00 - 12:00</u>: Videos and components of Model Rocketry 
-        
-        <u>12:00 - 12:45</u>: Lunch
-        
-        <u>1:00 - 2:00</u>: 
-        
-        <u>2:00 - 3:00</u>: Aerospace History
+        <u>9:45-10:30</u>: Material Considerations in Aerospace
         <br>
-        
+        <u>10:30-11:00</u>: Snack Break
+        <br>
+        <u>11:00-12:00</u>: OpenRocket Lecture
+        <br>
+        <u>12:00-12:30</u>: Lunch Break
+        <br>
+        <u>12:30-3:00</u>: Rocket Simulation in OpenRocket
+        <br>
+        <br>
+
         Day 3
         <br>
-        <u>9:00 - 9:15</u>: Settle in 
-        
-        <u>9:15 - 9:45</u>: Recap
-        
-        <u>9:45 - 10:15</u>: Open Rocket PPT and Video
-        
-        <u>10:15 - 10:30</u>: Snack Break
-        
-        <u>10:30 - 12:00</u>: Sim work
-        
-        <u>12:00 - 12:45</u>: Lunch
-        
-        <u>1:00 - 2:00</u>: simple CAD Intro 
-        
-        <u>2:00 - 3:00</u>: Walkthrough and CAD work (Have to Finish)
+        <u>9:00-10:00</u>: Intro to Bottle Rockets
+        <br>
+        <u>10:00-11:00</u>: Bottle Rocket Building
+        <br>
+        <u>11:00-11:15</u>: Snack Break
+        <br>
+        <u>11:15-12:00</u>: Bottle Rocket Launch
+        <br>
+        <u>12:00-12:30</u>: Lunch Break
+        <br>
+        <u>12:30-1:30</u>: Bottle Rocket Redesign
+        <br>
+        <u>1:30-2:00</u>: Bottle Rocket Launch
+        <br>
+        <u>2:00-2:30</u>: Final Redesign
+        <br>
+        <u>2:30-3:00</u>: Final Launch
+        <br>
         <br>
         
         Day 4
         <br>
-        <u>9:00 - 9:15</u>: Settle in 
-        
-        <u>10:15 - 10:30</u>: Open Up simulations
-        
-        <u>10:30 - 12:00</u>: 
-        
-        <u>12:00 - 12:45</u>: Lunch
-        
-        <u>1:00 - 3:00</u>: Build time
+        <u>9:15-10:00</u>: Building Model Rockets Lecture
+        <br>
+        <u>10:00-11:00</u>: Rocket Building
+        <br>
+        <u>11:00-11:15</u>: Snack Break
+        <br>
+        <u>11:15-12:00</u>: Rocket Building
+        <br>
+        <u>12:00-12:30</u>: Lunch Break
+        <br>
+        <u>1:00-2:00</u>: Mentor Presentation
+        <br>
+        <u>2:00-3:00</u>: Launch Day Presentation & Alimeter Instruction
+        <br>
         <br>
         
         Day 5
         <br>
-        
-        <u>9:00 - 9:30</u>: Arrive at Field and setup
-        
-        <u>9:30 - 10:00</u>: Example and guide through
-        
-        <u>10:00 - 12:00</u>: Launches 
+        <u>9:15-9:30</u>: Prepare Field for Launching
+        <br>
+        <u>9:30-10:00</u>: Complete First Round of Flights
+        <br>
+        <u>10:00-11:00</u>: Complete Second Round of Flights
+        <br>
+        <u>11:00-11:30</u>: Complete Third Round of Flights
+        <br>
+        <u>11:30-12:00</u>: Reviewing Data & Comparing to Simulations
+        <br>
+        <u>12:00-1:00</u>: Recap of Camp, Rocket Data Analysis
+        <br>
+        <br>
       </h1>
     </div>
 
