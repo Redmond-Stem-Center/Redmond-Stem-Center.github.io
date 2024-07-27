@@ -161,16 +161,46 @@
 <hr class="solid">
 <!-- workshops end -->
 
-    
-<!-- Add Bootstrap CSS for responsiveness -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .section-bgdark {
+      background-color: #333;
+    }
+    .section-title {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .aboutTitle h1 {
+      margin-bottom: 20px;
+    }
+    .iframe-container {
+      margin-bottom: 20px;
+    }
+    .container > .row.content > .col-lg-6,
+    .container > .row.content > .col-md-12 {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 576px) {
+      .container > .row.content > .col-lg-6,
+      .container > .row.content > .col-md-12 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
 
 <section id="summer-camps" class="about section-bgdark">
   <div class="section-title">
     <h3 style="color:#EAD7E1">Summer Camps</h3>
     <br>
   </div>
-  
+
   <!-- Robotics Camp -->
   <div class="container">
     <div class="row content">
@@ -190,11 +220,9 @@
           </stripe-buy-button>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12 pt-4 pt-lg-0">
-        <div class="container">
-          <p>For <a class="font-italic" style="color:#8EB897;">5th - 8th graders</a>. The Redmond STEM Center is proud to present our annual Robotics Summer Camp. Students will use Arduino to make basic circuits, then get to code sensors, motors, and other electronics. In the final days, students will create and code a motorized buggy. They will craft motorized attachments to compete in a tournament style battle-bots competition at the end of the week. Students will get to take home their battle-bots and a full Arduino kit to keep working on projects with the skills they learn. Classes will run 1pm - 5pm, Monday to Friday</p>
-          <p class="font-italic" style="color:#8EB897;">$300 per student. Contact us for financial aid.</p>
-        </div>
+      <div class="col-lg-6 col-md-12">
+        <p>For <a class="font-italic" style="color:#8EB897;">5th - 8th graders</a>. The Redmond STEM Center is proud to present our annual Robotics Summer Camp. Students will use Arduino to make basic circuits, then get to code sensors, motors, and other electronics. In the final days, students will create and code a motorized buggy. They will craft motorized attachments to compete in a tournament style battle-bots competition at the end of the week. Students will get to take home their battle-bots and a full Arduino kit to keep working on projects with the skills they learn. Classes will run 1pm - 5pm, Monday to Friday</p>
+        <p class="font-italic" style="color:#8EB897;">$300 per student. Contact us for financial aid.</p>
       </div>
     </div>
   </div>
@@ -220,11 +248,9 @@
           </stripe-buy-button>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12 pt-4 pt-lg-0">
-        <div class="container">
-          <p>For <a class="font-italic" style="color:#8EB897;">5th - 8th graders</a>. The Redmond STEM Center is proud to present our annual Rocketry Summer camp for students in 5th - 8th grade. By the end of the week students will launch their own handmade E class model rockets hundreds of feet into the air. But before then, they'll work with experienced students and guest experts to learn the physics, aerodynamics, and design skills that go into launching a rocket. Classes go from 8am to 12pm, Monday to Friday.</p>
-          <p class="font-italic" style="color:#8EB897;">$300 per student. Contact us for financial aid.</p>
-        </div>
+      <div class="col-lg-6 col-md-12">
+        <p>For <a class="font-italic" style="color:#8EB897;">5th - 8th graders</a>. The Redmond STEM Center is proud to present our annual Rocketry Summer camp for students in 5th - 8th grade. By the end of the week students will launch their own handmade E class model rockets hundreds of feet into the air. But before then, they'll work with experienced students and guest experts to learn the physics, aerodynamics, and design skills that go into launching a rocket. Classes go from 8am to 12pm, Monday to Friday.</p>
+        <p class="font-italic" style="color:#8EB897;">$300 per student. Contact us for financial aid.</p>
       </div>
     </div>
   </div>
@@ -250,11 +276,9 @@
           </stripe-buy-button>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12 pt-4 pt-lg-0">
-        <div class="container">
-          <p>For <a class="font-italic" style="color:#8EB897;">5th - 8th graders</a>. Get ready to code and create at the Redmond STEM Center's Middle School Web Development Camp! Join us this August for week of front-end language mastery, where you'll delve into HTML, CSS, and JavaScript to build your own dazzling websites. Our expert instructors will nurture students’ passion for web design while fostering creativity and innovation. Don't miss this chance to level up your tech skills and be a part of the future at Redmond STEM Center's premier web development camp!</p>
-          <p class="font-italic" style="color:#8EB897;">$150 per student. Contact us for financial aid.</p>
-        </div>
+      <div class="col-lg-6 col-md-12">
+        <p>For <a class="font-italic" style="color:#8EB897;">5th - 8th graders</a>. Get ready to code and create at the Redmond STEM Center's Middle School Web Development Camp! Join us this August for week of front-end language mastery, where you'll delve into HTML, CSS, and JavaScript to build your own dazzling websites. Our expert instructors will nurture students’ passion for web design while fostering creativity and innovation. Don't miss this chance to level up your tech skills and be a part of the future at Redmond STEM Center's premier web development camp!</p>
+        <p class="font-italic" style="color:#8EB897;">$150 per student. Contact us for financial aid.</p>
       </div>
     </div>
   </div>
@@ -276,15 +300,7 @@
           <script async src="https://js.stripe.com/v3/buy-button.js"></script>
           <stripe-buy-button
             buy-button-id="buy_btn_1PbWxJBkXyrliJjqkCxsaeBv"
-            publishable-key="pk_live_51J1RJXBkXyrliJjqJldjDyHLPoyvJZZ8CE4pEAjMG0YK9llNF7d5Slb2xkgC785rzGYOgy96WDrExJZLA3Te75b9002DFTv7jl">
-          </stripe-buy-button>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12 pt-4 pt-lg-0">
-        <div class="container">
-          <p>For <a class="font-italic" style="color:white;">6th - 8th graders</a>. The Redmond STEM Center is proud to present our new RC Airplane Summer Camp in partnership with the local Marymoor RC Club. Students will learn how to build their own DIY remote-controlled airplanes and learn important physics concepts about how planes fly.
-
-
+            publishable-key="pk_live_51J1RJXBkXyrliJjqJldjDyHLPoyvJZZ8CE4
 
  <!--   <div class="containerrocket">
       <div class="row content">
