@@ -1698,6 +1698,7 @@ svg {
 .clients {
   padding-top: 10%;
   padding-bottom: 10%;
+  overflow: visible;
 }
 
 .clients .clients-slider .swiper-slide img {
@@ -1726,6 +1727,68 @@ svg {
 
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ff5964;
+}
+
+.clients .clients-slider {
+  position: relative;
+  padding: 0 60px;
+  overflow: visible;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clients .clients-slider .swiper-button-next,
+.clients .clients-slider .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0;
+  z-index: 10;
+}
+
+.clients .clients-slider .swiper-button-next {
+  right: -10px;
+}
+
+.clients .clients-slider .swiper-button-prev {
+  left: -10px;
+}
+
+.clients .clients-slider .swiper-button-next:hover,
+.clients .clients-slider .swiper-button-prev:hover {
+  background-color: #ff5964;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 89, 100, 0.3);
+}
+
+.clients .clients-slider .swiper-button-next::after,
+.clients .clients-slider .swiper-button-prev::after {
+  font-size: 16px;
+  font-weight: bold;
+  color: #171d21;
+  transition: color 0.3s ease;
+}
+
+.clients .clients-slider .swiper-button-next:hover::after,
+.clients .clients-slider .swiper-button-prev:hover::after {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .clients .clients-slider {
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  
+  .clients .clients-slider .swiper-button-next,
+  .clients .clients-slider .swiper-button-prev {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
