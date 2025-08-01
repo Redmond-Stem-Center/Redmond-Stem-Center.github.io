@@ -1544,7 +1544,7 @@ svg {
   height: 500px;
   font-size: 1.75rem;
   color: #fff;
-  background-position: fixed;
+  background-position: center;
   background-size: cover;
   background-color: #171d21;
   background-blend-mode: soft-light;
@@ -1554,11 +1554,37 @@ svg {
   justify-content: center;
   transform-style: preserve-3d;
   transform: perspective(1000px);
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: perspective(1000px) translateZ(20px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 .card h1,
 .card h2 {
   transform: translateZ(50px);
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  position: relative;
+}
+
+.card h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 90%;
 }
 
 /*--------------------------------------------------------------
@@ -2156,4 +2182,41 @@ svg {
 .fc-list-day-text:hover,
 .fc-list-day-side-text:hover {
   color: black;
+}
+
+/* Responsive styling for cards */
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+    height: 400px;
+    font-size: 1.5rem;
+    margin-bottom: 15%;
+  }
+  
+  .card h1 {
+    font-size: 2rem;
+  }
+  
+  .card h2 {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 98%;
+    height: 350px;
+    font-size: 1.25rem;
+    margin-bottom: 10%;
+  }
+  
+  .card h1 {
+    font-size: 1.75rem;
+  }
+  
+  .card h2 {
+    font-size: 0.9rem;
+    max-width: 98%;
+  }
 }
