@@ -220,6 +220,10 @@
       type: 'bullets',
       clickable: true
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     breakpoints: {
       320: {
         slidesPerView: 2,
@@ -234,8 +238,8 @@
         spaceBetween: 80
       },
       992: {
-        slidesPerView: 4,
-        spaceBetween: 120
+        slidesPerView: 3,
+        spaceBetween: 100
       }
     }
   });
